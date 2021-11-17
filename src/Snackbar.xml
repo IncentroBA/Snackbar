@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="incentro.snackbar.Snackbar" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Snackbar</name>
+    <description>UI pattern from Material design. Snackbars provide brief messages about app processes at the bottom of the screen.</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="textLabel" type="expression" required="true">
+                <caption>Text label</caption>
+                <description>Label to display inside the snackbar.</description>
+                <returnType type="String" />
+            </property>
+            <property key="openSnackbar" type="attribute" required="true">
+                <caption>Open Snackbar</caption>
+                <description>Boolean which trigger the opening of the snackbar</description>
+                <attributeTypes>
+                    <attributeType name="Boolean"/>
+                </attributeTypes>
+            </property>
+            <property key="autoClose" type="integer" defaultValue="5">
+                <caption>Autoclose</caption>
+                <description>Autoclose after given amount of seconds</description>
+            </property>
+        </propertyGroup>
+
+        <propertyGroup caption="Actions">
+            <property key="action" type="action" required="false">
+                <caption>Action</caption>
+                <description>Optional action.</description>
+            </property>
+            <property key="buttonLabel" type="string" required="false" defaultValue="Action">
+                <caption>Button label</caption>
+                <description>Label to display for the action.</description>
+            </property>
+            <property key="canBeClosed" type="boolean" defaultValue="true">
+                <caption>May be closed?</caption>
+                <description>Display a close button inside the snackbar. This also sets Open snackbar boolean to false.</description>
+            </property>
+        </propertyGroup>
+
+        <propertyGroup caption="Advanced">
+            <property key="leading" type="boolean" defaultValue="false">
+                <caption>Leading aligned?</caption>
+                <description>Positions the snackbar on the leading edge of the screen (left in LTR, right in RTL) instead of centered.</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
