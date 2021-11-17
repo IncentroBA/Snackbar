@@ -27,7 +27,6 @@
     color: #eeeeee;
     display: flex;
     flex-direction: row;
-    min-width: 344px;
     max-width: 672px;
     transition: opacity 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms, transform 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms,
         -webkit-transform 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms;
