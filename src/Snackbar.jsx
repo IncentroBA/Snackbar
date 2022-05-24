@@ -2,7 +2,19 @@
 import "./ui/Snackbar.css";
 import { createElement, useEffect, useRef } from "react";
 
-export default function Snackbar({ action, autoClose, buttonLabel, canBeClosed, leading, openSnackbar, textLabel }) {
+export default function Snackbar({
+    action,
+    autoClose,
+    buttonLabel,
+    canBeClosed,
+    leading,
+    openSnackbar,
+    textLabel,
+    ...rest
+}) {
+    const id = rest.id || "";
+    const style = rest.class || "";
+    const widgetName = rest.name || "";
     const widget = useRef(null);
     const widgetContainer = useRef(null);
     let timer;
@@ -48,7 +60,7 @@ export default function Snackbar({ action, autoClose, buttonLabel, canBeClosed, 
 
     if (textLabel.status === "available") {
         return (
-            <div className="snackbar-widget" ref={widget}>
+            <div id={id} className={`snackbar-widget ${style} ${widgetName}`} ref={widget}>
                 <div className="snackbar-widget__container" ref={widgetContainer}>
                     <p className="snackbar-widget__label" aria-live="polite">
                         {textLabel.value}
