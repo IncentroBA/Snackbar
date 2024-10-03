@@ -1,7 +1,7 @@
 import { createElement } from "react";
 
-export function preview() {
-    return <div className="snackbar-widget">Snackbar widget</div>;
+export function preview({ textLabel }) {
+    return <div className="snackbar-preview">{textLabel}</div>;
 }
 
 export function getPreviewCss() {

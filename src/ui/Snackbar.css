@@ -11,6 +11,16 @@
     z-index: 8;
 }
 
+.snackbar-preview {
+    background-color: #323232;
+    border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+    color: #eeeeee;
+    max-width: 672px;
+    padding: 14px 16px;
+}
+
 .snackbar-widget--leading {
     justify-content: flex-start;
 }
@@ -69,6 +79,7 @@
     position: relative;
     width: 36px;
 }
+
 .snackbar-widget__close::after {
     background-color: hsla(0, 0%, 100%, 0.87);
     content: "";

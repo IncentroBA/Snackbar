@@ -1,41 +1,47 @@
 {
-    "name": "snackbar",
-    "widgetName": "Snackbar",
-    "version": "1.0.1",
-    "description": "UI pattern from Material design. Snackbars provide brief messages about app processes at the bottom of the screen.",
-    "copyright": "2023 Incentro International B.V.",
-    "author": "Rob Duits",
-    "engines": {
-        "node": ">=16"
-    },
-    "license": "MIT",
-    "config": {
-        "projectPath": "../..//",
-        "mendixHost": "http://localhost:8080",
-        "developmentPort": 3000
-    },
-    "packagePath": "incentro",
-    "scripts": {
-        "start": "pluggable-widgets-tools start:server",
-        "dev": "pluggable-widgets-tools start:web",
-        "build": "pluggable-widgets-tools build:web",
-        "lint": "pluggable-widgets-tools lint",
-        "lint:fix": "pluggable-widgets-tools lint:fix",
-        "prerelease": "npm run lint",
-        "release": "pluggable-widgets-tools release:web"
-    },
-    "devDependencies": {
-        "@mendix/pluggable-widgets-tools": "^10.0.1"
-    },
-    "dependencies": {
-        "classnames": "^2.3.2"
-    },
-    "resolutions": {
-        "react": "18.2.0",
-        "react-native": "0.70.7"
-    },
-    "overrides": {
-        "react": "18.2.0",
-        "react-native": "0.70.7"
-    }
+  "name": "snackbar",
+  "widgetName": "Snackbar",
+  "version": "1.0.2",
+  "description": "UI pattern from Material design. Snackbars provide brief messages about app processes at the bottom of the screen.",
+  "copyright": "2024 Incentro International B.V.",
+  "author": "Rob Duits",
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "MIT",
+  "config": {
+    "projectPath": "../..//",
+    "mendixHost": "http://localhost:8080",
+    "developmentPort": 3000
+  },
+  "packagePath": "incentro",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:server",
+    "dev": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:web"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^10.15.0"
+  },
+  "dependencies": {
+    "classnames": "^2.5.1"
+  },
+  "resolutions": {
+    "react": "18.2.0",
+    "react-native": "0.72.7",
+    "react-dom": "18.2.0",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.0"
+  },
+  "overrides": {
+    "react": "18.2.0",
+    "react-native": "0.72.7",
+    "react-dom": "18.2.0",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.0"
+  }
 }
