@@ -23,6 +23,7 @@ one snackbar should be displayed at a time.
 -   (optional) Configure an action to be triggered from the snackbar (nanoflows, save changes, open pages, ...).
 -   If an action is configured, also provide a button label.
 -   May be closed? Give the user the option to manually close the snackbar, aside from the auto-close timer.
+-   Conditional show button boolean (optional): Set this if the button should be hidden/visible via boolean attribute.
 
 ### Advanced
 
