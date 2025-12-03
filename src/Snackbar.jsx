@@ -7,6 +7,7 @@ export default function Snackbar({
     autoClose,
     buttonLabel,
     canBeClosed,
+    conditionalVisibleButton,
     leading,
     openSnackbar,
     textLabel,
@@ -66,11 +67,13 @@ export default function Snackbar({
                         {textLabel.value}
                     </p>
                     <div className="snackbar-widget__actions">
-                        {action && action.canExecute && (
-                            <button className="snackbar-widget__action" onClick={onclickAction}>
-                                {buttonLabel}
-                            </button>
-                        )}
+                        {action &&
+                            action.canExecute &&
+                            (conditionalVisibleButton === undefined || conditionalVisibleButton.value === true ? (
+                                <button className="snackbar-widget__action" onClick={onclickAction}>
+                                    {buttonLabel?.value}
+                                </button>
+                            ) : null)}
 
                         {canBeClosed === true && (
                             <button className="snackbar-widget__close" title="Dismiss" onClick={closeSnackbar}>
